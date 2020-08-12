@@ -1,0 +1,84 @@
+[
+    {
+        "name": "caja",
+        "label": "Caja",
+        "items": [
+            {
+                "name": "compra",
+                "label": "Compra"
+            },
+            {
+                "name": "venta",
+                "label": "Venta"
+            },
+            {
+                "name": "devoluciones",
+                "label": "Devoluciones"
+            }
+        ]
+    },
+    {
+        "name": "clientes",
+        "label": "Clientes",
+        "items": [
+            {
+                "name": "crearCliente",
+                "label": "Crear Cliente"
+            },
+            {
+                "name": "modificarCliente",
+                "label": "Modificar Cliente"
+            },
+            {
+                "name": "eliminarCliente",
+                "label": "Eliminar Cliente"
+            }
+        ]
+    },
+    {
+        "name": "proveedores",
+        "label": "Proveedores",
+        "items": [
+            {
+                "name": "crearProveedor",
+                "label": "Crear Proveedor"
+            },
+            {
+                "name": "modificarProveedor",
+                "label": "Modificar Proveedor"
+            },
+            {
+                "name": "eliminarProveedor",
+                "label": "Eliminar Proveedor",
+                "items": [
+                    {
+                        "name": "si",
+                        "label": "Si"
+                    },
+                    {
+                        "name": "no",
+                        "label": "No"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "reparaciones",
+        "label": "Reparaciones",
+        "items": [
+            {
+                "name": "crearProveedor",
+                "label": "Crear Proveedor"
+            },
+            {
+                "name": "modificarProveedor",
+                "label": "Modificar Proveedor"
+            },
+            {
+                "name": "eliminarProveedor",
+                "label": "Eliminar Proveedor"
+            }
+        ]
+    }
+]
