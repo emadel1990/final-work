@@ -36,7 +36,6 @@ class Sidebar extends React.Component {
                                 <a href={'/'} className="waves-effect waves-light btn-inicio" onClick={this.foo}>
                                     <i class="material-icons icono-inicio">{"home"}</i>{"Inicio"}</a>
                             </li>
-
                         </ul>
                     </nav>
 
