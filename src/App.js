@@ -1,21 +1,21 @@
 import React from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
 import Sidebar from './components/sidebar/Sidebar';
+import './css/app.css';
 
 
 
 
 class App extends React.Component {
 
+
+
   render() {
     return (
 
-      <div>
-        <div class="navbar-fixed">
-          <nav>
-            <Sidebar />
-          </nav>
-        </div>
+      <div className="app">
+
+        <Sidebar />
 
       </div>
     )

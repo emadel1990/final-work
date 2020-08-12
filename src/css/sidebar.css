@@ -1,9 +1,46 @@
+/* botonera */
 .sidebar{
-    max-width: 300px;
+    padding-top: 52px;
+    max-width: 300px; 
     border: 1px solid rgba(0,0,0,0.1);
-    position: absolute;
-    background: black;
+    }
+
+/* boton de inicio */
+.btn-inicio{
+    margin-top: 10.5px;
+    height: 40px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    line-height: 40px;
 }
-.sidebar-subitem-text{
-    font-size: 0.8rem;
+/* icono del home */
+.icono-inicio{
+   display: flex;
+   align-items: center;
+}
+/* ancho de los botones de la botonera */
+.btn-small{
+    width: 170px;
+}
+
+.navbar{
+    padding-left: 0px;
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%); ;
+    align-content: center;
+}
+
+@media only screen and (min-width: 1240px){
+.grilla{
+    display: grid;
+    grid-template-columns: 12% 88%;
+    
+    
+    
+}
+}
+
+.btn-small{
+    margin-bottom: 2px;
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
 }

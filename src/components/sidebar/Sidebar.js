@@ -1,49 +1,51 @@
 import React from 'react';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import items from '../sidebar/items';
+// import items from '../sidebar/items';
+// import 'materialize-css/dist/css/materialize.min.css';
 
 
+class Sidebar extends React.Component {
+
+    foo(e) {
+        return e.preventDefault();
+    }
+
+    render() {
+        return (
+            <div className="grilla">
+                <div className="sidebar" >
+                    <ul className="items">
+                        <li><a href={'/'} className="waves-effect waves-light btn-small" onClick={this.foo}>
+                            <i class="material-icons left">{"api"}</i>{"Caja"}</a></li>
+                        <li><a href={'/'} className="waves-effect waves-light btn-small" onClick={this.foo}>
+                            <i class="material-icons left">{"face"}</i>{"Clientes"}</a></li>
+                        <li><a href={'/'} className="waves-effect waves-light btn-small" onClick={this.foo}>
+                            <i class="material-icons left">{"cloud"}</i>{"Proveedores"}</a></li>
+                        <li><a href={'/'} className="waves-effect waves-light btn-small">
+                            <i class="material-icons left">{"build_circle"}</i>{"Reparaciones"}</a></li>
+                    </ul>
+                </div>
+                <div >
+                    <nav className="navbar">
+
+                        <a href={"/"} data-target="slide-out"
+                            className="sidenav-trigger show-on-large " onClick={this.foo}>
+                            <i class="material-icons">{"menu"}</i>
+                        </a>
+                        <ul className="ul-inicio">
+                            <li className="ini">
+                                <a href={'/'} className="waves-effect waves-light btn-inicio" onClick={this.foo}>
+                                    <i class="material-icons icono-inicio">{"home"}</i>{"Inicio"}</a>
+                            </li>
+
+                        </ul>
+                    </nav>
 
 
-function SidebarItem({ label, items, depthStep = 10, depth = 0, ...rest }) {
-    return (
-        <>
-            <ListItem button dense {...rest}>
-                <ListItemText style={{ paddingLeft: depth * depthStep }}>
-                    <span>{label}</span>
-                </ListItemText>
-            </ListItem>
-            {Array.isArray(items) ? (
-                <List disablePadding dense>
-                    {items.map((subItem) => (
-                        <SidebarItem
-                            key={subItem.name}
-                            depth={depth + 3}
-                            depthStep={depthStep}
-                            {...subItem}
-                        />
-                    ))}
-                </List>
-            ) : null}
-        </>
-    )
+                </div >
+
+            </div>
+        )
+    }
 }
-function Sidebar({ depthStep, depth }) {
-    return (
-        <div className="sidebar">
-            <List disablePadding dense>
-                {items.map((sidebarItem, index) => (
-                    <SidebarItem
-                        key={`${sidebarItem.name}${index}`}
-                        depthStep={depthStep}
-                        depth={depth}
-                        {...sidebarItem}
-                    />
-                ))}
-            </List>
-        </div>
-    )
-}
-export default Sidebar; 
+
+export default Sidebar;

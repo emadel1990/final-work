@@ -1,82 +1,72 @@
 [
     {
-        "name": "caja",
+        "id": "caja",
         "label": "Caja",
         "items": [
             {
-                "name": "compra",
+                "id": "compra",
                 "label": "Compra"
             },
             {
-                "name": "venta",
+                "id": "venta",
                 "label": "Venta"
             },
             {
-                "name": "devoluciones",
+                "id": "devoluciones",
                 "label": "Devoluciones"
             }
         ]
     },
     {
-        "name": "clientes",
+        "id": "clientes",
         "label": "Clientes",
         "items": [
             {
-                "name": "crearCliente",
+                "id": "crearCliente",
                 "label": "Crear Cliente"
             },
             {
-                "name": "modificarCliente",
+                "id": "modificarCliente",
                 "label": "Modificar Cliente"
             },
             {
-                "name": "eliminarCliente",
+                "id": "eliminarCliente",
                 "label": "Eliminar Cliente"
             }
         ]
     },
     {
-        "name": "proveedores",
+        "id": "proveedores",
         "label": "Proveedores",
         "items": [
             {
-                "name": "crearProveedor",
+                "id": "crearProveedor",
                 "label": "Crear Proveedor"
             },
             {
-                "name": "modificarProveedor",
+                "id": "modificarProveedor",
                 "label": "Modificar Proveedor"
             },
             {
-                "name": "eliminarProveedor",
-                "label": "Eliminar Proveedor",
-                "items": [
-                    {
-                        "name": "si",
-                        "label": "Si"
-                    },
-                    {
-                        "name": "no",
-                        "label": "No"
-                    }
-                ]
+                "id": "eliminarProveedor",
+                "label": "Eliminar Proveedor"
             }
         ]
     },
     {
-        "name": "reparaciones",
+        "id": "reparaciones",
         "label": "Reparaciones",
         "items": [
             {
-                "name": "crearProveedor",
+                "id": "crearProveedor",
                 "label": "Crear Proveedor"
             },
             {
-                "name": "modificarProveedor",
+                "id": "modificarProveedor",
                 "label": "Modificar Proveedor"
             },
             {
-                "name": "eliminarProveedor",
+                "id": "eliminarProveedor",
                 "label": "Eliminar Proveedor"
             }
         ]
