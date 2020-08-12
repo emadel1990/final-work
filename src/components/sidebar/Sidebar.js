@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../sidebar/logo.png';
 // import items from '../sidebar/items';
 // import 'materialize-css/dist/css/materialize.min.css';
 
@@ -14,7 +15,7 @@ class Sidebar extends React.Component {
             <div className="grilla">
 
                 <div className="sidebar" >
-                    <<img src="https://i.ibb.co/dbm3s4r/logo.png" className="logo" />
+                    <img src={logo} className="logo" />
                     {/* <img src={logo} alt="logo pagina" className="logo" /> */}
                     <ul className="items">
                         <li><a href={'/'} className="waves-effect waves-light btn-small" onClick={this.foo}>
