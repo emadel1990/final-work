@@ -1,6 +1,5 @@
 import React from 'react';
-import 'materialize-css/dist/css/materialize.min.css';
-import Sidebar from './components/sidebar/Sidebar';
+import Sidebar from './components/extras/Sidebar';
 import './css/app.css';
 
 

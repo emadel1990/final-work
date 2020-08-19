@@ -1,53 +1,53 @@
 import React from 'react';
-import logo from '../sidebar/logo.png';
-// import items from '../sidebar/items';
-// import 'materialize-css/dist/css/materialize.min.css';
+import './sidebar.css';
+import 'app.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+    faUsers,
+    faPeopleCarry,
+    faWallet,
+    faTools
+} from '@fortawesome/free-solid-svg-icons';
 
 
-class Sidebar extends React.Component {
 
-    foo(e) {
-        return e.preventDefault();
+
+export default class Sidebar extends React.Component {
+
+    prevent(e) {
+        this.prevendDefault()
     }
-
     render() {
         return (
-            <div className="grilla">
-
-                <div className="sidebar" >
-                    <img src={logo} alt="logo" className="logo" />
-                    {/* <img src={logo} alt="logo pagina" className="logo" /> */}
-                    <ul className="items">
-                        <li><a href={'/'} className="waves-effect waves-light btn-small" onClick={this.foo}>
-                            <i class="material-icons left">{"shopping_cart"}</i>{"Caja"}</a></li>
-                        <li><a href={'/'} className="waves-effect waves-light btn-small" onClick={this.foo}>
-                            <i class="material-icons left">{"face"}</i>{"Clientes"}</a></li>
-                        <li><a href={'/'} className="waves-effect waves-light btn-small" onClick={this.foo}>
-                            <i class="material-icons left">{"local_shipping"}</i>{"Proveedores"}</a></li>
-                        <li><a href={'/'} className="waves-effect waves-light btn-small" onClick={this.foo}>
-                            <i class="material-icons left">{"build_circle"}</i>{"Reparaciones"}</a></li>
-                    </ul>
-                </div>
-                <div >
-                    <nav className="navbar">
-                        <a href={"/"} data-target="slide-out"
-                            className="sidenav-trigger show-on-large " onClick={this.foo}>
-                            <i class="material-icons">{"menu"}</i>
+            <nav className="sidebar">
+                <ul className="sidebar-nav">
+                    <li className="sidebar-item">
+                        <a href={this.prevent} className=" sidebar-link">
+                            <FontAwesomeIcon className="icono" icon={faWallet} />
+                            <span className="link-text">Caja</span>
                         </a>
-                        <ul className="ul-inicio">
-                            <li className="ini">
-                                <a href={'/'} className="waves-effect waves-light btn-inicio" onClick={this.foo}>
-                                    <i class="material-icons icono-inicio">{"home"}</i>{"Inicio"}</a>
-                            </li>
-                        </ul>
-                    </nav>
+                    </li>
+                    <li className="sidebar-item">
+                        <a href={this.prevent} className="sidebar-link">
+                            <FontAwesomeIcon className="icono" icon={faUsers} />
+                            <span className="link-text">Clientes</span>
+                        </a>
+                    </li>
+                    <li className="sidebar-item">
+                        <a href={this.prevent} className="sidebar-link">
+                            <FontAwesomeIcon className="icono" icon={faPeopleCarry} />
+                            <span className="link-text">Proveedores</span>
+                        </a>
+                    </li>
+                    <li className="sidebar-item">
+                        <a href={this.prevent} className="sidebar-link">
+                            <FontAwesomeIcon className="icono" icon={faTools} />
+                            <span className="link-text">Reparaciones</span>
+                        </a>
+                    </li>
 
-
-                </div >
-
-            </div>
+                </ul>
+            </nav >
         )
     }
 }
-
-export default Sidebar;
